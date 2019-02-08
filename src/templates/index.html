@@ -1,0 +1,12 @@
+{% extends "layout.html" %} {% block body %}
+<main role="main" class="container">
+  <h1 class="mt-5">{{ title }}</h1>
+  <p class="lead">Please enter the company code of Japan you want to search for information.</p>
+  <div class="form-container">
+    <form class="form-group" method="POST" action="/">
+      <label for="company_code">Company Code</label>
+      <input type="number" class="form-control" id="company_code" name="company_code">
+    </form>
+  </div>
+</main>
+{% endblock %}
